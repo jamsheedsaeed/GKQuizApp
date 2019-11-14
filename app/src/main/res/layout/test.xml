@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a5298"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:scrollbars="none">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="60dp"
+
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cat1"
+                    style="@style/Base.CardView"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="40dp"
+                    app:cardBackgroundColor="#f6923c"
+                    app:cardCornerRadius="20dp">
+
+                    <!--            <ImageView-->
+                    <!--                android:id="@+id/list_image_preview"-->
+                    <!--                android:layout_width="70dp"-->
+                    <!--                android:layout_height="50dp"-->
+                    <!--                android:layout_gravity="center"-->
+                    <!--                android:contentDescription="new description"-->
+                    <!--                android:layout_marginTop="-15dp"-->
+                    <!--                android:padding="10dp"-->
+                    <!--                android:src="@drawable/ic_play_arrow_black_24dp"-->
+                    <!--                android:tint="@color/md_divider_black" />-->
+
+                    <TextView
+                        android:id="@+id/title_preview1"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/list_image_preview"
+                        android:text="Islam"
+                        android:textColor="#000" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cat2"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="220dp"
+                    app:cardBackgroundColor="#f6923c"
+                    app:cardCornerRadius="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/title_preview2"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:layout_toRightOf="@+id/list_image_preview"
+                        android:text="Holy Prophet (P.B.U.H)"
+                        android:textColor="#000"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cat3"
+                    style="@style/Base.CardView"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="40dp"
+                    app:cardBackgroundColor="#f6923c"
+                    app:cardCornerRadius="20dp">
+
+                    <!--            <ImageView-->
+                    <!--                android:id="@+id/list_image_preview"-->
+                    <!--                android:layout_width="70dp"-->
+                    <!--                android:layout_height="50dp"-->
+                    <!--                android:layout_gravity="center"-->
+                    <!--                android:contentDescription="new description"-->
+                    <!--                android:layout_marginTop="-15dp"-->
+                    <!--                android:padding="10dp"-->
+                    <!--                android:src="@drawable/ic_play_arrow_black_24dp"-->
+                    <!--                android:tint="@color/md_divider_black" />-->
+
+                    <TextView
+                        android:id="@+id/title_preview3"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/list_image_preview"
+                        android:text="Islam"
+                        android:textColor="#000" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cat4"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="220dp"
+                    app:cardBackgroundColor="#f6923c"
+                    app:cardCornerRadius="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/title_preview4"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:layout_toRightOf="@+id/list_image_preview"
+                        android:text="Holy Prophet (P.B.U.H)"
+                        android:textColor="#000"
+                        />
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                >
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cat5"
+                style="@style/Base.CardView"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="40dp"
+                app:cardBackgroundColor="#f6923c"
+                app:cardCornerRadius="20dp">
+
+                <!--            <ImageView-->
+                <!--                android:id="@+id/list_image_preview"-->
+                <!--                android:layout_width="70dp"-->
+                <!--                android:layout_height="50dp"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:contentDescription="new description"-->
+                <!--                android:layout_marginTop="-15dp"-->
+                <!--                android:padding="10dp"-->
+                <!--                android:src="@drawable/ic_play_arrow_black_24dp"-->
+                <!--                android:tint="@color/md_divider_black" />-->
+
+                <TextView
+                    android:id="@+id/title_preview5"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/list_image_preview"
+                    android:text="Islam"
+                    android:textColor="#000" />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cat6"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="220dp"
+                    app:cardBackgroundColor="#f6923c"
+                    app:cardCornerRadius="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/title_preview6"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:layout_toRightOf="@+id/list_image_preview"
+                        android:text="Holy Prophet (P.B.U.H)"
+                        android:textColor="#000"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cat7"
+                    style="@style/Base.CardView"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="40dp"
+                    app:cardBackgroundColor="#f6923c"
+                    app:cardCornerRadius="20dp">
+
+                    <!--            <ImageView-->
+                    <!--                android:id="@+id/list_image_preview"-->
+                    <!--                android:layout_width="70dp"-->
+                    <!--                android:layout_height="50dp"-->
+                    <!--                android:layout_gravity="center"-->
+                    <!--                android:contentDescription="new description"-->
+                    <!--                android:layout_marginTop="-15dp"-->
+                    <!--                android:padding="10dp"-->
+                    <!--                android:src="@drawable/ic_play_arrow_black_24dp"-->
+                    <!--                android:tint="@color/md_divider_black" />-->
+
+                    <TextView
+                        android:id="@+id/title_preview7"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/list_image_preview"
+                        android:text="Islam"
+                        android:textColor="#000" />
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cat8"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="220dp"
+                    app:cardBackgroundColor="#f6923c"
+                    app:cardCornerRadius="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/title_preview8"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:layout_toRightOf="@+id/list_image_preview"
+                        android:text="Holy Prophet (P.B.U.H)"
+                        android:textColor="#000"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cat9"
+                    style="@style/Base.CardView"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="40dp"
+                    app:cardBackgroundColor="#f6923c"
+                    app:cardCornerRadius="20dp">
+
+                    <!--            <ImageView-->
+                    <!--                android:id="@+id/list_image_preview"-->
+                    <!--                android:layout_width="70dp"-->
+                    <!--                android:layout_height="50dp"-->
+                    <!--                android:layout_gravity="center"-->
+                    <!--                android:contentDescription="new description"-->
+                    <!--                android:layout_marginTop="-15dp"-->
+                    <!--                android:padding="10dp"-->
+                    <!--                android:src="@drawable/ic_play_arrow_black_24dp"-->
+                    <!--                android:tint="@color/md_divider_black" />-->
+
+                    <TextView
+                        android:id="@+id/title_preview9"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/list_image_preview"
+                        android:text="Islam"
+                        android:textColor="#000" />
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cat10"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="220dp"
+                    app:cardBackgroundColor="#f6923c"
+                    app:cardCornerRadius="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/title_preview10"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:layout_toRightOf="@+id/list_image_preview"
+                        android:text="Holy Prophet (P.B.U.H)"
+                        android:textColor="#000"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

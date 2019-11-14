@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#2a5298"
+
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/first_life" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/life_on" android:layout_alignRight="@id/second_life" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/second_life" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/life_on" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/third_life" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:src="@drawable/life_on" android:layout_alignLeft="@id/second_life" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/left_right_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/leftLayout" android:background="@drawable/left" android:layout_width="150.0dip" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="01" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/levelView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/level" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textColor="@android:color/white" android:id="@id/timmerView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/rightLayout" android:background="@drawable/right" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/pointsView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/points" android:layout_alignBottom="@id/points" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/questionLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:layout_below="@id/left_right_layout">
+        <RelativeLayout android:id="@id/ques_lay" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/questionView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="What is my name?" android:layout_centerInParent="true" />
+            </ScrollView>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+            <Button android:id="@id/button_fiftyfifty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiftyfifty_button" android:layout_weight="1.0" />
+            <Button android:id="@id/button_two_shots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/twoshots_button" android:layout_weight="1.0" />
+            <Button android:id="@id/button_Exchange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exchange_button" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/btn1Layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:background="#ff3d839c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+            <Button android:id="@id/choice1" android:background="@drawable/pressed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="25.0dip" android:text="Anas" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn2Layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:background="#ff3d839c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+            <Button android:id="@id/choice2" android:background="@drawable/pressed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip" android:text="Moiz" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn3Layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:background="#ff3d839c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+            <Button android:id="@id/choice3" android:background="@drawable/pressed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip" android:text="Zubair" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn4Layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:background="#ff3d839c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+            <Button android:id="@id/choice4" android:background="@drawable/pressed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip" android:text="Ahmed" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|center_vertical" />
+</RelativeLayout>

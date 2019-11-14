@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainscreen1"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/adRectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical|center_horizontal" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/playgame"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                app:cardBackgroundColor="#f57224"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="64dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/list_image_preview"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="new description"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_play_arrow_black_24dp"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/title_preview"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/list_image_preview"
+                        android:text="Online Quiz"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewcategory"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#f57224"
+
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="64dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/list_image_preview1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="new description"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_list_black_24dp"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/title_preview1"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/list_image_preview1"
+                        android:text="General Knowledge"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/highscore"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#f57224"
+
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="64dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/list_image_preview2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="new description"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_equalizer_black_24dp"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/title_preview2"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/list_image_preview2"
+                        android:text="High Score"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/feedback"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#f57224"
+
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="239dp"
+                    android:layout_height="64dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/list_image_preview3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="new description"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_feedback_black_24dp"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/title_preview3"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/list_image_preview3"
+                        android:text="Feedback"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout android:orientation="horizontal"
+        android:id="@id/linearLayout"
+        android:background="#f57224"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:weightSum="3.0"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout android:background="#ff9dc1cd" android:layout_width="1.0dip" android:layout_height="fill_parent" android:alpha="50.0" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/appinvite" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageView3" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_black_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:tint="@color/white"
+                />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rate us" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:background="#ff9dc1cd" android:layout_width="1.0dip" android:layout_height="fill_parent" android:alpha="50.0" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/moreApps" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/ic_apps_black_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:tint="@color/white"
+                />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MoreApps" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:background="#ff9dc1cd" android:layout_width="1.0dip" android:layout_height="fill_parent" android:alpha="50.0" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/about" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/ic_share_white_24dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:background="#ff9dc1cd" android:layout_width="1.0dip" android:layout_height="fill_parent" android:alpha="50.0" />
+
+    </LinearLayout>
+</RelativeLayout>

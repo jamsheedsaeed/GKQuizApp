@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "490862902954",
+    "firebase_url": "https://generalknow-1187c.firebaseio.com",
+    "project_id": "generalknow-1187c",
+    "storage_bucket": "generalknow-1187c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490862902954:android:3fe640200ba81438009ad3",
+        "android_client_info": {
+          "package_name": "jk.techplus.quiz.gkQuiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490862902954-s8kjikhfjvn2lv0c1igqe332mfqmng9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGlSfEgGKYcNp3-uoMnwdiNjfgJnyWByQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490862902954-s8kjikhfjvn2lv0c1igqe332mfqmng9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

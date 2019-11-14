@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/scores" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/infoLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/dialog_title" android:background="#fff1a10d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/score" android:layout_above="@id/infoLayout" android:layout_alignLeft="@id/infoLayout" />
+        <TextView android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/score_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:text="Previous Score" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/black"
+            android:layout_gravity="right"
+            android:id="@id/total_questions_current"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="کل سوال  : 0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:id="@id/correct_questions_current"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="درست جواب : 0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:id="@id/wrong_questions_current"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="غلط جواب : 0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:layout_gravity="right"
+            android:id="@id/score_current"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="کل سوال  : 0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/high_score_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:text="Best Score" />
+        <TextView android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:layout_gravity="right"
+            android:id="@id/total_questions_high"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="کل سوال  : 0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:id="@id/correct_questions_high"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="درست جواب : 0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:id="@id/wrong_questions_high"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="غلط جواب : 0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/black" android:id="@id/score_high" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="درست جواب : 0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/line" android:background="#ff24647a" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/infoLayout" />
+    <RelativeLayout android:id="@id/relativeLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line">
+        <Button android:id="@id/close_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:soundEffectsEnabled="true" />
+    </RelativeLayout>
+</RelativeLayout>

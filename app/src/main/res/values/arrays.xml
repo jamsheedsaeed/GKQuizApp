@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_names">
+        <item>All</item>
+        <item>Quran Majeed</item>
+        <item>Hazrat Muhammad PBUH</item>
+        <item>Sahabee</item>
+        <item>Azwaj e Mutahirat</item>
+        <item>Islam</item>
+        <item>Quaid-e-Azam</item>
+        <item>General Knowledge</item>
+        <item>Inventions</item>
+        <item>Pakistan</item>
+        <item>EveryDay Science</item>
+        <item>Sports</item>
+        <item>Synonyms</item>
+        <item>Antonyms</item>
+
+    </string-array>
+
+    <array name="moreList">
+        <item>More Apps</item>
+        <item>Rate Us</item>
+        <item>Share</item>
+        <item>Exit</item>
+    </array>
+
+    <array name="moreIds">
+        <item>MoreApps</item>
+        <item>RateUs</item>
+        <item>Share</item>
+        <item>Exit</item>
+    </array>
+</resources>
